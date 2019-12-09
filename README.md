@@ -25,8 +25,8 @@ a nodejs module for local and remote Inter Process Communication.
   3. npm i
   4. node src/device.server.js 
   5. node src/driver.client.js ( Open another tab or terminal and run this)
-  6. npm device.test ( To run unit tests )
-  7. npm driver.test ( To run unit tests )
+  6. npm run device.test ( To run unit tests )
+  7. npm run driver.test ( To run unit tests )
   
 ## Configured Inputs & Messages
 Possible command configured are as follows
