@@ -22,7 +22,7 @@ function validateAndExecuteCommand( command ) {
     return new Promise( ( resolve, reject ) => {
 
         setTimeout( () => {
-            command = command && command.toString().toLowerCase();
+            command = command && command.toString().trim().toLowerCase();
 
             const commandStr = getCommandStr( command );
             console.log( `Sending value ${commandStr}\n` );

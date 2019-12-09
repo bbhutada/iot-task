@@ -19,7 +19,7 @@ function cliInterface() {
         } );
 
     return new Promise( function( resolve, reject ) {
-        commandLineInterface.question( displayLog( '$Enter command to get Stable Weight Value:', 'red' ), ( command, err ) => {
+        commandLineInterface.question( displayLog( '$Enter command to get Stable Weight Value: ', 'red' ), ( command, err ) => {
 
             // set default value to 's'
             if( !command || !command.trim() ) {
