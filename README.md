@@ -73,4 +73,12 @@ Sending value S_+
 Received command: X
 Sending value S_E
 ```
+## File Structure
+<b>src:</b><br/>  It contains all the device & driver code<br/>
+1] ./src/cliInterface.js -> Expose cli interface methods for user interaction.<br/>
+2] ./src/device.server.js -> Start point of the device.<br/>
+3] ./src/driver.client.js -> Start point of the driver and responsible for user Interaction with device.<br/>
+4] ./src/ipcConfig -> Exposes new instances of ipc for device & driver with different configuration.<br/>
+5] ./src/utils.js -> Exposes helper methods for device and driver communications.<br/>
 
+<b>test:</b><br/> It has both device and driver (driver.test.js & device.test.js) unit tests.<br/>
